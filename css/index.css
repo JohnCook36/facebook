@@ -1,0 +1,154 @@
+.body {
+    margin: 0;
+    font-size: 15px;
+    color: #080808;
+}
+
+*,
+*:before,
+*:after{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    cursor: pointer;
+}
+
+/*==============Header
+*/
+
+.header {
+    background-color: #333333;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 61px;
+    padding: 0 15px;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+}
+
+.header-form {
+    padding-left: 8px;
+}
+
+.search-box {
+    width: 281px;
+    height: 40px;
+    background: #F1F2F5;
+    border-radius: 100px;
+    padding: 12px;
+    border: none;
+    cursor: pointer;
+}
+
+.search-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float: left;
+    color: #66676B;
+    width: 16px;
+    height: 16px;
+}
+
+.search-txt {
+    display: flex;
+    border: none;
+    background: none;
+    outline: none;
+    float: left;
+    padding-left: 8px;
+    color: #66676B;
+    font-size: 15px;
+    line-height: 1.2;
+    width: 240px;
+    cursor: pointer;
+}
+
+.nav-icons {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;}
+
+.icon {
+    height: 23px;
+    width: 23px;
+    fill: #F1F2F5;
+    cursor: pointer;
+}
+
+.bgc-icon {
+    padding: 15px 60px;
+    transition: background-color 0.3s linear;
+}
+
+.bgc-icon:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.header-profile {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 20%;
+}
+
+.header-info {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: auto;
+    border-radius: 25px;
+    margin-right: 12px;
+    padding: 0 5px;
+    transition: .2s;
+    opacity: 1;
+}
+
+.header-info:hover {
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+.header-ava {
+    display: flex;
+    align-items: center;
+}
+
+.header-name {
+    display: flex;
+    align-items: center;
+    color: #535353;
+}
+
+.header-help {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    background-color: #E5E6EB;
+    transition: .2s linear;
+}
+
+.header-help:hover {
+    cursor: pointer;
+    background-color: #c4c4ca;
+}
+
+.icon-profile {
+    width: 15px;
+    height: 15px;
+
+}
