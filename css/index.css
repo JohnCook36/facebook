@@ -1,7 +1,22 @@
+:root {
+    --white: #FFFFFF;
+    --facebookBlack: #080808;
+    --facebookBlue: #0572EF;
+    --facebookGreen: #67BA6C;
+    --facebookRed: #DE3F4F;
+    --pointer: #E30613;
+    --facebookLightBlue: #E9F3FE;
+    --facebookLightGrey: #E5E6EB;
+    --facebookInputGrey: #F1F2F5;
+    --facebookLineGrey: #CFD0D4;
+    --facebookGrey: #66676B;
+    --facebookGreyMedium: #8C939C;
+}
+
 body {
     margin: 0;
     font-size: 15px;
-    color: #080808;
+    color: var(--facebookBlack);
     background: rgba(240, 242, 245, 1);
     font-family: sans-serif;
 }
@@ -15,13 +30,18 @@ body {
 
 a {
     text-decoration: none;
-    color: #080808;
+    color: var(--facebookBlack);
 }
 
 img {
     height: 100%;
     width: auto;
     cursor: pointer;
+}
+
+svg {
+    width: 26px;
+    height: 26px;
 }
 
 button {
@@ -41,7 +61,7 @@ button {
 */
 
 .header {
-    background: #FFFFFF;
+    background: var(--white);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -62,7 +82,7 @@ button {
 .search-box {
     width: 281px;
     height: 40px;
-    background: #F1F2F5;
+    background: var(--facebookInputGrey);
     border-radius: 100px;
     padding: 12px;
     border: none;
@@ -73,7 +93,6 @@ button {
     justify-content: center;
     align-items: center;
     float: left;
-    color: #66676B;
     width: 16px;
     height: 16px;
 }
@@ -85,7 +104,7 @@ button {
     outline: none;
     float: left;
     padding-left: 8px;
-    color: #66676B;
+    color: var(--facebookGrey);
     font-size: 15px;
     line-height: 1.2;
     width: 240px;
@@ -101,7 +120,7 @@ button {
 .icon {
     height: 23px;
     width: 23px;
-    fill: #66676B;
+    fill: var(--facebookGrey);
     cursor: pointer;
 }
 
@@ -111,12 +130,12 @@ button {
 }
 
 .bgc-icon:hover {
-    border-bottom: 3px solid #0572EF;
+    border-bottom: 3px solid var(--facebookBlue);
     cursor: pointer;
 }
 
 .bgc-icon:hover .icon {
-    fill: #0572EF;
+    fill: var(--facebookBlue);
 }
 
 .header-profile {
@@ -140,7 +159,7 @@ button {
 }
 
 .header-info:hover {
-    background-color: #E9F3FE;
+    background-color: var(--facebookLightBlue);
 }
 
 .header-ava {
@@ -152,7 +171,6 @@ button {
     margin-left: 7px;
     display: flex;
     align-items: center;
-    color: #535353;
 }
 
 .header-help {
@@ -162,17 +180,17 @@ button {
     border-radius: 50%;
     width: 40px;
     height: 40px;
-    background-color: #E5E6EB;
+    background-color:var(--facebookLightGrey);
     transition: .2s linear;
 }
 
 .header-help:hover {
     cursor: pointer;
-    background-color: #c4c4ca;
+    background-color: #d0d0d6;
 }
 
 .header-help:hover .icon {
-    fill: #0572EF;
+    fill: var(--facebookBlue);
 }
 
 .icon-profile {
@@ -184,7 +202,7 @@ button {
 */
 
 .intro {
-    background-color: #FFFFFF;
+    background-color: var(--white);
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
     margin-bottom: 15px;
 }
@@ -213,14 +231,14 @@ button {
 }
 
 .industry {
-    color: #66676B
+    color: var(--facebookGrey)
 }
 
 .btn-title {
     display: flex;
     align-self: flex-end;
     cursor: pointer;
-    background: #0572EF;
+    background: var(--facebookBlue);
     border-radius: 6px;
     padding: 10px 105px;
 }
@@ -232,7 +250,7 @@ button {
 
 .btn-title > span {
     margin-left: 6px;
-    color: #FFFFFF;
+    color: var(--white);
 }
 
 .intro-bot {
@@ -243,7 +261,7 @@ button {
 }
 
 .container-intro {
-    border-top: 1px solid #CFD0D4;
+    border-top: 1px solid var(--facebookLineGrey);
 }
 
 .intro-nav {
@@ -263,9 +281,9 @@ button {
 }
 
 .nav-link:hover {
-    color: #0572EF;
-    fill: #0572EF;
-    border-bottom: 3px solid #0572EF;
+    color: var(--facebookBlue);
+    fill: var(--facebookBlue);
+    border-bottom: 3px solid var(--facebookBlue);
 }
 
 .nav-link-icon {
@@ -298,16 +316,25 @@ button {
 }
 
 .btn-nav:hover {
-    background-color: #E9F3FE;
-    color: #0572EF;
-    fill: #0572EF;
+    background-color: var(--facebookLightBlue);
+    color: var(--facebookBlue);
+    fill: var(--facebookBlue);
 }
 
 .wall {
 
 }
 
-.container-content {
+.menu {
+    display: grid;
+    grid-gap: 16px;
+    grid-area: menu;
+
+}
+/*=====================================About
+*/
+.about {
+    grid-template-rows: repeat(11, 1fr);
 
 }
 
