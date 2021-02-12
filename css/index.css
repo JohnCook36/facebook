@@ -1,29 +1,47 @@
-.body {
+body {
     margin: 0;
     font-size: 15px;
     color: #080808;
+    background: rgba(240, 242, 245, 1);
+    font-family: sans-serif;
 }
 
 *,
 *:before,
-*:after{
+*:after {
     box-sizing: border-box;
     margin: 0;
 }
 
 a {
     text-decoration: none;
+    color: #080808;
 }
 
 img {
+    height: 100%;
+    width: auto;
     cursor: pointer;
 }
 
-/*==============Header
+button {
+    border: none;
+}
+
+/*==================================Container
+*/
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    width: 877px;
+}
+
+/*==================================Header
 */
 
 .header {
-    /*background-color: #333333;*/
+    background: #FFFFFF;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -48,7 +66,6 @@ img {
     border-radius: 100px;
     padding: 12px;
     border: none;
-    cursor: pointer;
 }
 
 .search-btn {
@@ -78,7 +95,8 @@ img {
 .nav-icons {
     width: 100%;
     display: flex;
-    justify-content: space-around;}
+    justify-content: space-evenly;
+}
 
 .icon {
     height: 23px;
@@ -88,14 +106,17 @@ img {
 }
 
 .bgc-icon {
-    padding: 15px 60px;
-    transition: background-color 0.3s linear;
+    padding: 15px 40px;
+    border-bottom: 3px solid transparent;
 }
 
 .bgc-icon:hover {
-    background-color: rgba(255, 255, 255, 0.2);
-    border-radius: 10px;
+    border-bottom: 3px solid #0572EF;
     cursor: pointer;
+}
+
+.bgc-icon:hover .icon {
+    fill: #0572EF;
 }
 
 .header-profile {
@@ -103,6 +124,7 @@ img {
     align-items: center;
     justify-content: space-around;
     width: 20%;
+    cursor: pointer;
 }
 
 .header-info {
@@ -118,7 +140,7 @@ img {
 }
 
 .header-info:hover {
-    background-color: rgba(255, 255, 255, 0.9);
+    background-color: #E9F3FE;
 }
 
 .header-ava {
@@ -127,6 +149,7 @@ img {
 }
 
 .header-name {
+    margin-left: 7px;
     display: flex;
     align-items: center;
     color: #535353;
@@ -148,8 +171,143 @@ img {
     background-color: #c4c4ca;
 }
 
+.header-help:hover .icon {
+    fill: #0572EF;
+}
+
 .icon-profile {
     width: 15px;
     height: 15px;
+}
+
+/*================================Intro
+*/
+
+.intro {
+    background-color: #FFFFFF;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+    margin-bottom: 15px;
+}
+
+.cover-img {
+    background: linear-gradient(180deg, #6F6F7A 0%, #FFFFFF 47.92%);
+    display: flex;
+    justify-content: center;
+    border-radius: 0 0 8px 8px;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+}
+
+.avatar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title {
+    font-size: 17px;
+    margin-left: 28px;
+}
+
+.industry {
+    color: #66676B
+}
+
+.btn-title {
+    display: flex;
+    align-self: flex-end;
+    cursor: pointer;
+    background: #0572EF;
+    border-radius: 6px;
+    padding: 10px 105px;
+}
+
+.icon-book {
+    height: 16px;
+    width: 16px;
+}
+
+.btn-title > span {
+    margin-left: 6px;
+    color: #FFFFFF;
+}
+
+.intro-bot {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.container-intro {
+    border-top: 1px solid #CFD0D4;
+}
+
+.intro-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-bgc {
 
 }
+
+.nav-link {
+    padding: 21px 16px;
+    border-bottom: 3px solid transparent;
+    color: #66676B;
+}
+
+.nav-link:hover {
+    color: #0572EF;
+    fill: #0572EF;
+    border-bottom: 3px solid #0572EF;
+}
+
+.nav-link-icon {
+    width: 9px;
+    height: 5px;
+}
+
+.intro-btn {
+    display: flex;
+    align-items: center;
+}
+
+.icon-like {
+    width: 17px;
+    height: 17px;
+}
+
+.icon-messenger {
+    width: 17px;
+    height: 17px;
+}
+
+.btn-nav {
+    display: flex;
+    align-items: center;
+    margin-left: 8px;
+    width: auto;
+    height: 36px;
+    border-radius: 6px;
+}
+
+.btn-nav:hover {
+    background-color: #E9F3FE;
+    color: #0572EF;
+    fill: #0572EF;
+}
+
+.wall {
+
+}
+
+.container-content {
+
+}
+
