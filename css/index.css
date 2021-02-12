@@ -321,8 +321,20 @@ button {
     fill: var(--facebookBlue);
 }
 
-.wall {
+/*======================================Wall
+*/
 
+.wall {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: 361px 502px;
+    grid-template-areas: 'menu posts';
+    grid-gap: 15px;
 }
 
 .menu {
@@ -337,4 +349,168 @@ button {
     grid-template-rows: repeat(11, 1fr);
 
 }
+
+.block {
+    padding: 15px 0 25px;
+    background: var(--white);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+}
+
+.block-title {
+    padding: 0 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.see-all {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 1.2;
+    color: var(--facebookBlue);
+}
+
+.map {
+    position: relative;
+    padding: 15px 15px 0;
+    border-radius: 8px;
+}
+
+.map-block{
+    top: 0;
+    z-index: 5;
+}
+
+.map-address {
+    background-color: var(--white);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.pointer-address {
+    width: 16px;
+    height: 20px;
+}
+
+.pointer-map {
+    fill: var(--pointer);
+}
+
+.info-list {
+    display: grid;
+    grid-gap: 15px;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.description {
+    list-style: url("../img/svg/info.svg");
+}
+
+.info-like {
+    list-style: url("../img/svg/like.svg");
+}
+
+.circle-box {
+    display: flex;
+}
+
+.circle {
+    width: 33px;
+    height: 33px;
+    background: var(--facebookBlue);
+    border-radius: 50%;
+}
+
+.info-follow {
+    list-style: url("../img/svg/follow.svg");
+}
+
+.info-checked {
+    list-style: url("../img/svg/checked.svg");
+}
+
+.info-web {
+    list-style: url("../img/svg/website.svg");
+}
+
+.info-web > a {
+    color: var(--facebookBlue);
+}
+
+.info-phone {
+    list-style: url("../img/svg/phone.svg");
+}
+
+.info-send-message {
+    list-style: url("../img/svg/send-message.svg");
+}
+
+.info-send-message > a {
+    color: var(--facebookBlue);
+}
+
+.info-email {
+    list-style: url("../img/svg/email.svg");
+}
+
+.info-email > a {
+    color: var(--facebookBlue);
+
+}
+
+.info-time {
+    list-style: url("../img/svg/time.svg");
+}
+
+.closed-now {
+    color: var(--facebookRed);
+}
+
+.info-industry {
+    list-style: url("../img/svg/industry.svg");
+}
+
+.info-industry > a {
+    color: var(--facebookBlue);
+}
+
+/*===========================================Photo
+*/
+
+.photo-block {
+    display: grid;
+    padding: 15px 15px 0;
+    grid-template-columns: repeat(3, 106px);
+    grid-template-rows: repeat(2, 106px);
+    grid-gap: 5px;
+    /*border-radius: 8px;*/
+
+}
+
+.image {
+    width: 106px;
+    height: 106px;
+    background: #333333;
+    border: 1px solid #E5E6EB;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
