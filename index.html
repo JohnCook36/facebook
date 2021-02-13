@@ -12,7 +12,7 @@
 </head>
 <body>
 
-<!--------------------------------------Sprite-->
+<!--------------------------------------------Sprite-->
 <svg style="display: none">
     <symbol id="search" viewBox="0 0 16 16">
         <g>
@@ -126,6 +126,12 @@
             <path fill-rule="evenodd" clip-rule="evenodd"
                   d="M10 20C15.5229 20 20 15.5229 20 10C20 4.47714 15.5229 0 10 0C4.47715 0 0 4.47714 0 10C0 15.5229 4.47715 20 10 20ZM11.5 5.75C11.5 6.44037 10.9404 7 10.25 7C9.55965 7 9 6.44037 9 5.75C9 5.05963 9.55965 4.5 10.25 4.5C10.9404 4.5 11.5 5.05963 11.5 5.75ZM9.5 8.5C8.94772 8.5 8.5 8.94772 8.5 9.5C8.5 10.0523 8.94772 10.5 9.5 10.5V14.5C9.5 15.0523 9.94772 15.5 10.5 15.5C11.0523 15.5 11.5 15.0523 11.5 14.5V9.5C11.5 8.94772 11.0523 8.5 10.5 8.5H9.5Z"
                   fill="#8C939C"/>
+        </g>
+    </symbol>
+
+    <symbol id="flag" viewBox="0 0 16 19">
+        <g>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M2 0H1V1H2V0ZM3 2H0V3H3V10H0V11H3H4H16L14 6.5L16 2H4H3ZM1 4H2V9H1V4ZM2 13H1V19H2V13Z" fill="#080808"/>
         </g>
     </symbol>
 
@@ -295,7 +301,7 @@
     <div class="container ">
         <div class="content">
             <div class="menu">
-                <!---------------------------------------------About-->
+                <!-----------------------------About-->
                 <div class="about">
                     <div class="block">
                         <div class="block-title">
@@ -369,7 +375,7 @@
                         </div>
                     </div>
                 </div>
-<!------------------------------------------------------------Photo-->
+<!---------------------------------------------Photo-->
                 <div class="photo">
                     <div class="block">
                         <div class="block-title">
@@ -388,7 +394,7 @@
                     </div>
                 </div>
 
-<!----------------------------------------------------------Video-->
+<!---------------------------------------------Video-->
                 <div class="video">
                     <div class="block">
                         <div class="block-title">
@@ -412,9 +418,39 @@
                         </div>
                     </div>
                 </div>
+
+<!--------------------------------------Transparency-->
+                <div class="transparency">
+                    <div class="block">
+                        <div class="block-title">
+                            <div class="transparency-title">
+                                <img class="transparency-logo" src="img/png/logo.png" alt="">
+                                <h2>Page transparency</h2>
+                            </div>
+                            <a href="#" class="see-all">See all</a>
+                        </div>
+
+                        <div class="transparency-info">
+                            <p>Facebook is showing information to help you
+                                better understand the purpose of a Page. See
+                                actions taken by the people who manage and
+                                post content.</p>
+                        </div>
+
+                        <div class="transparency-created">
+                            <div class="transparency-icon">
+                                <svg class="icon-transparency">
+                                    <use xlink:href="#flag"></use>
+                                </svg>
+                            </div>
+                            <p class="created-text">Page created - 20 October 2015</p>
+                        </div>
+                    </div>
+                </div>
+<!---------------------------------------------/Menu-->
             </div>
 
-            <!---------------------------------------------Posts-->
+            <!---------------------------------Posts-->
             <div class="posts"></div>
         </div>
     </div>
