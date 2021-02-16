@@ -303,6 +303,7 @@ button {
 }
 
 .nav-link-icon {
+    margin-left: 10px;
     width: 9px;
     height: 5px;
 }
@@ -329,6 +330,11 @@ button {
 
 .icon-elipsis {
     width: 16px;
+}
+
+.circle-red-2 {
+    top: 5px;
+    right: 50px;
 }
 
 .btn-nav {
@@ -446,6 +452,7 @@ button {
 }
 
 .address-title {
+    color: var(--facebookBlue);
     margin-left: 15px;
 }
 
