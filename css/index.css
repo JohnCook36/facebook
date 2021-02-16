@@ -195,7 +195,7 @@ button {
     border-radius: 50%;
     width: 40px;
     height: 40px;
-    background-color:var(--facebookLightGrey);
+    background-color: var(--facebookLightGrey);
     transition: .2s linear;
 }
 
@@ -294,6 +294,7 @@ button {
     border-bottom: 3px solid transparent;
     color: #66676B;
 }
+
 .active,
 .nav-link:hover {
     color: var(--facebookBlue);
@@ -321,13 +322,39 @@ button {
     height: 17px;
 }
 
+.icon-search {
+    width: 16px;
+    height: 16px;
+}
+
+.icon-elipsis {
+    width: 16px;
+}
+
 .btn-nav {
+    outline: none;
     display: flex;
     align-items: center;
     margin-left: 8px;
     width: auto;
     height: 36px;
     border-radius: 6px;
+}
+
+.btn-nav-1 {
+    padding: 10px 25px;
+}
+
+.btn-nav-2 {
+    padding: 10px 15px;
+}
+
+.btn-nav-3 {
+    padding: 10px 15px;
+}
+
+.btn-nav-4 {
+    padding: 0 15px;
 }
 
 .btn-nav:hover {
@@ -358,6 +385,7 @@ button {
     grid-area: menu;
 
 }
+
 /*=====================================About
 */
 .about {
@@ -391,7 +419,7 @@ button {
     border-radius: 8px;
 }
 
-.map-block{
+.map-block {
     width: 329px;
     height: 170px;
     background: #333333;
@@ -469,47 +497,47 @@ button {
     display: flex;
 }
 
-.circle-box a:nth-child(1){
+.circle-box a:nth-child(1) {
     z-index: 8;
 }
 
-.circle-box a:nth-child(2){
+.circle-box a:nth-child(2) {
     position: absolute;
     left: 25px;
     z-index: 7;
 }
 
-.circle-box a:nth-child(3){
+.circle-box a:nth-child(3) {
     position: absolute;
     left: 50px;
     z-index: 6;
 }
 
-.circle-box a:nth-child(4){
+.circle-box a:nth-child(4) {
     position: absolute;
     left: 75px;
     z-index: 5;
 }
 
-.circle-box a:nth-child(5){
+.circle-box a:nth-child(5) {
     position: absolute;
     left: 100px;
     z-index: 4;
 }
 
-.circle-box a:nth-child(6){
+.circle-box a:nth-child(6) {
     position: absolute;
     left: 125px;
     z-index: 3;
 }
 
-.circle-box a:nth-child(7){
+.circle-box a:nth-child(7) {
     position: absolute;
     left: 150px;
     z-index: 2;
 }
 
-.circle-box a:nth-child(8){
+.circle-box a:nth-child(8) {
     position: absolute;
     left: 175px;
     z-index: 1;
@@ -649,7 +677,7 @@ video {
     height: 18px;
 }
 
-.like-value{
+.like-value {
     margin-left: 10px;
 }
 
@@ -682,7 +710,7 @@ video {
     color: var(--facebookGrey)
 }
 
-.transparency-created{
+.transparency-created {
     display: flex;
     align-items: center;
     margin-top: 10px;
@@ -716,11 +744,13 @@ video {
 /*========================================================/Menu
 */
 
-/*=====================================Post*/
+/*=====================================Post
+*/
 .posts {
     grid-gap: 20px;
     grid-area: posts;
 }
+
 /*=======================================Create-post
 */
 
@@ -729,7 +759,7 @@ video {
 }
 
 .block-post {
-    padding: 15px;
+    padding: 15px 0;
     background: var(--white);
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
     border-radius: 8px;
@@ -738,6 +768,8 @@ video {
 .header-post {
     display: flex;
     justify-content: space-between;
+    padding: 0 15px;
+
 }
 
 .post-avatar {
@@ -814,7 +846,6 @@ video {
     margin-left: 10px;
 }
 
-
 .author-name {
     font-weight: 700;
     font-size: 16px;
@@ -834,6 +865,7 @@ video {
 }
 
 .post-text {
+    padding: 0 15px;
     margin-top: 15px;
     font-size: 16px;
     line-height: 1.2;
@@ -844,19 +876,30 @@ video {
     width: 502px;
     height: 281px;
     background: #333333;
+    cursor: pointer;
 }
 
 .post-action {
+    padding: 0 15px;
     margin-top: 15px;
     display: flex;
 }
 
 .actions-comments {
-
+    width: 100%;
+    display: flex;
 }
 
 .smile {
     display: flex;
+    width: 100%;
+}
+
+.smile-description {
+    margin-left: 10px;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
 }
 
 .actions {
@@ -875,8 +918,8 @@ video {
 }
 
 .input-comment {
+    padding: 10px 15px 10px 15px;
     margin-top: 10px;
-    padding-top: 10px;
     border-top: 1px solid var(--facebookLightGrey);
 }
 
@@ -888,6 +931,7 @@ video {
 .input-block {
     margin-top: 10px;
     display: flex;
+    justify-content: space-between;
 }
 
 .avatar-comment {
@@ -903,19 +947,19 @@ video {
     height: 16px;
 }
 
-
-
 .view-comment {
     margin-top: 10px;
 }
 
 .input-box {
-    width: 430px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 430px;
     height: 36px;
     background: var(--facebookInputGrey);
     border-radius: 100px;
-    margin-left: 5px;
-    padding: 10px 0 10px 15px;
+    padding: 10px 15px;
 }
 
 .input-txt {
@@ -924,12 +968,16 @@ video {
     display: flex;
     background: none;
     outline: none;
-    width: 240px;
+    width: 335px;
     cursor: text;
 }
 
+.input-buttons {
+    display: flex;
+}
+
 .input-btn {
-    float: right;
+    margin-left: 10px;
     width: 16px;
     height: 16px;
     cursor: pointer;
@@ -942,13 +990,14 @@ video {
     grid-gap: 10px;
     margin-top: 20px;
     overflow: hidden;
-
 }
 
 .img1 {
     border: 1px solid #E5E6EB;
     box-sizing: border-box;
-    border-radius: 0 0 8px 8px
+    border-radius: 0 0 8px 8px;
+    cursor: pointer;
+
 }
 
 .img {
@@ -962,7 +1011,7 @@ video {
     padding: 10px 14px;
 }
 
-.img-subtitle{
+.img-subtitle {
     font-size: 13px;
     line-height: 1.2;
     color: var(--facebookGrey);
