@@ -896,6 +896,7 @@ video {
 }
 
 .smile-description {
+    color: var(--facebookGrey);
     margin-left: 10px;
     display: flex;
     width: 100%;
@@ -918,6 +919,7 @@ video {
 }
 
 .input-comment {
+    color: var(--facebookGrey);
     padding: 10px 15px 10px 15px;
     margin-top: 10px;
     border-top: 1px solid var(--facebookLightGrey);
@@ -984,6 +986,9 @@ video {
 }
 
 
+
+/*============================Other-Post
+*/
 .block-img {
     display: grid;
     grid-template-columns: 300px 300px;
