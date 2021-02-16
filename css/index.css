@@ -279,7 +279,7 @@ button {
     border-bottom: 3px solid transparent;
     color: #66676B;
 }
-
+.active,
 .nav-link:hover {
     color: var(--facebookBlue);
     fill: var(--facebookBlue);
@@ -339,7 +339,7 @@ button {
 
 .menu {
     display: grid;
-    grid-gap: 16px;
+    grid-gap: 15px;
     grid-area: menu;
 
 }
@@ -450,10 +450,58 @@ button {
 }
 
 .circle-box {
+    position: relative;
     display: flex;
 }
 
+.circle-box a:nth-child(1){
+    z-index: 8;
+}
+
+.circle-box a:nth-child(2){
+    position: absolute;
+    left: 25px;
+    z-index: 7;
+}
+
+.circle-box a:nth-child(3){
+    position: absolute;
+    left: 50px;
+    z-index: 6;
+}
+
+.circle-box a:nth-child(4){
+    position: absolute;
+    left: 75px;
+    z-index: 5;
+}
+
+.circle-box a:nth-child(5){
+    position: absolute;
+    left: 100px;
+    z-index: 4;
+}
+
+.circle-box a:nth-child(6){
+    position: absolute;
+    left: 125px;
+    z-index: 3;
+}
+
+.circle-box a:nth-child(7){
+    position: absolute;
+    left: 150px;
+    z-index: 2;
+}
+
+.circle-box a:nth-child(8){
+    position: absolute;
+    left: 175px;
+    z-index: 1;
+}
+
 .circle {
+    border: 2px solid #FFFFFF;
     width: 33px;
     height: 33px;
     background: var(--facebookBlue);
@@ -513,7 +561,7 @@ button {
     color: var(--facebookBlue);
 }
 
-/*===========================================Photo
+/*========================================Photo
 */
 
 .photo {
@@ -537,7 +585,7 @@ button {
     border: 1px solid #E5E6EB;
 }
 
-/*==========================================Video
+/*======================================Video
 */
 
 video {
@@ -595,7 +643,7 @@ video {
     color: var(--facebookGrey);
 }
 
-/*==========================================Transparency
+/*================================Transparency
 */
 
 .transparency {
@@ -650,27 +698,260 @@ video {
     padding-left: 10px;
 }
 
+/*========================================================/Menu
+*/
+
+/*=====================================Post*/
+.posts {
+    grid-gap: 20px;
+    grid-area: posts;
+}
+/*=======================================Create-post
+*/
+
+.create-post {
+    display: grid;
+}
+
+.block-post {
+    padding: 15px;
+    background: var(--white);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+}
+
+.header-post {
+    display: flex;
+    justify-content: space-between;
+}
+
+.post-avatar {
+    height: 40px;
+    width: 40px;
+    background: var(--facebookBlue);
+    border-radius: 50%;
+}
+
+.block-button-create {
+    width: 424px;
+}
+
+.button-create {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background: var(--facebookLightGrey);
+    border-radius: 6px;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 1.3;
+    cursor: pointer;
+    transition: .1s linear;
+}
+
+.button-create:hover {
+    background: #d0d0d6;
+    color: var(--facebookBlue);
+}
+
+.add {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 20px;
+}
+
+.icon-add {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.check-in-pointer {
+    fill: var(--pointer);
+}
+
+.action-name {
+    padding-left: 5px;
+    display: flex;
+    align-items: center;
+    color: var(--facebookGrey);
+}
+
+/*============================Pinned-Post
+*/
+
+.title-post {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+    color: var(--facebookGrey);
+    text-transform: uppercase;
+    margin: 30px 0 10px;
+}
+
+.post-info {
+    display: flex;
+}
+
+.author-info {
+    margin-left: 10px;
+}
+
+
+.author-name {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    cursor: pointer;
+}
+
+.post-date {
+    color: var(--facebookGrey);
+    font-size: 13px;
+    line-height: 1.2;
+}
+
+.other-action {
+    fill: var(--facebookGrey);
+    cursor: pointer;
+}
+
+.post-text {
+    margin-top: 15px;
+    font-size: 16px;
+    line-height: 1.2;
+}
+
+.post-img {
+    margin-top: 20px;
+    width: 502px;
+    height: 281px;
+    background: #333333;
+}
+
+.post-action {
+    margin-top: 15px;
+    display: flex;
+}
+
+.actions-comments {
+
+}
+
+.smile {
+    display: flex;
+}
+
+.actions {
+    border-top: 1px solid var(--facebookLightGrey);
+    margin-top: 10px;
+    padding-top: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.action-icon {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    fill: transparent;
+}
+
+.input-comment {
+    margin-top: 10px;
+    padding-top: 10px;
+    border-top: 1px solid var(--facebookLightGrey);
+}
+
+.relevant {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.input-block {
+    margin-top: 10px;
+    display: flex;
+}
+
+.avatar-comment {
+    width: 33px;
+    height: 33px;
+    background: var(--facebookBlue);
+    border-radius: 50%;
+}
+
+.icon-input {
+    display: flex;
+    width: 16px;
+    height: 16px;
+}
 
 
 
+.view-comment {
+    margin-top: 10px;
+}
+
+.input-box {
+    width: 430px;
+    height: 36px;
+    background: var(--facebookInputGrey);
+    border-radius: 100px;
+    margin-left: 5px;
+    padding: 10px 0 10px 15px;
+}
+
+.input-txt {
+    border: none;
+    background: var(--facebookInputGrey);
+    display: flex;
+    background: none;
+    outline: none;
+    width: 240px;
+    cursor: text;
+}
+
+.input-btn {
+    float: right;
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+}
 
 
+.block-img {
+    display: grid;
+    grid-template-columns: 300px 300px;
+    grid-gap: 10px;
+    margin-top: 20px;
+    overflow: hidden;
 
+}
 
+.img1 {
+    border: 1px solid #E5E6EB;
+    box-sizing: border-box;
+    border-radius: 0 0 8px 8px
+}
 
+.img {
+    width: 300px;
+    height: 300px;
+    background: #333333;
+    border-radius: 8px 8px 0 0;
+}
 
+.title-box {
+    padding: 10px 14px;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.img-subtitle{
+    font-size: 13px;
+    line-height: 1.2;
+    color: var(--facebookGrey);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
