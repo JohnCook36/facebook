@@ -124,7 +124,22 @@ button {
     cursor: pointer;
 }
 
+.circle-red {
+    position: absolute;
+    top: 2px;
+    right: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    color: var(--white);
+    background: var(--facebookRed);
+}
+
 .bgc-icon {
+    position: relative;
     padding: 15px 40px;
     border-bottom: 3px solid transparent;
 }
